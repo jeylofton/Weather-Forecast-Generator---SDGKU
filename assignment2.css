@@ -1,0 +1,43 @@
+body {
+    background: #1f2329;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.forecast-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.day-card {
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #2b3038;
+    text-align: center;
+}
+.day-card:first-child {
+background: #2b3038;
+}
+
+.day-card h3 {
+margin: 0 0 8px;
+font-size: 16px;
+}
+
+.icon {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.day-card p {
+display: block;
+margin: 0 3px;
+font-size: 14px;
+}
+
+.forecast-row {
+display: flex;
+}

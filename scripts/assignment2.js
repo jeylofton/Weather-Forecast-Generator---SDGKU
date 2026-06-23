@@ -15,7 +15,7 @@ let saturdayC = 30;
 let sundayC = 29;
 
 // 3. Call the fn for everyday
-let mondayF = celsiusToFar(mondayC);
+let mondayF = celsiusToFar(mondayC).toFixed(1);
 let tuesdayF = celsiusToFar(tuesdayC);
 let wednesdayF = celsiusToFar(wednesdayC);
 let thursdayF = celsiusToFar(thursdayC);
@@ -28,11 +28,52 @@ let sundayF = celsiusToFar(sundayC);
 // 4. Call the output
 let output = "";
 output =`<h2>${city} </h2>`;
-output += `<p>Monday ${mondayC} - ${mondayF}</p>`;
-output += `<p>Tuesday ${tuesdayC} - ${tuesdayF}</p>`;
-output += `<p>Wednesday ${wednesdayC} - ${wednesdayF}</p>`;
-output += `<p>Thursday ${thursdayC} - ${thursdayF}</p>`;
-output += `<p>Friday ${fridayC} - ${fridayF}</p>`;
-output += `<p>Saturday ${saturdayC} - ${saturdayF}</p>`;
-output += `<p>Sunday ${sundayC} - ${sundayF}</p>`;
+output +=`<div class="forecast-row">`;
+output += 
+`<div class="day-card">
+    <h3>Mon</h3>
+    <div class="icon">☀️</div>
+    <p>${mondayC} °C</p>
+    <p>${mondayF} °F</p>
+</div>`;
+
+output += `<div class="day-card">
+<h3>Tues</h3>
+<div class="icon">⛈️</div>
+<p> ${tuesdayC} °C </p> 
+<p>${tuesdayF} °F</p>
+</div>`;
+
+output += `<div class="day-card"> 
+<h3>Wed</h3> 
+<div class="icon">☁️</div>
+<p>${wednesdayC} °C</p> 
+<p>${wednesdayF} °F</p>
+</div>`;
+output += `<div class="day-card">
+<h3>Thurs</h3> 
+<div class="icon">☁️</div>
+<p>${thursdayC} °C </p>
+<p>${thursdayF} °F</p>
+</div>`;
+output += `<div class="day-card">
+<h3>Fri</h3> 
+<div class="icon">☀️</div>
+<p>${fridayC} °C</p>
+<p>${fridayF} °F</p>
+</div>`;
+output += `<div class="day-card">
+<h3>Sat</h3>
+<div class="icon">☀️</div>
+<p>${saturdayC} °C</p>
+<p>${saturdayF} °F</p>
+</div>`;
+output += `<div class="day-card">
+<h3>Sun</h3>
+<div class="icon">⛈️</div>
+<p>${sundayC} °C </p>
+<p>${sundayF} °F</p>
+</div>`;
+
+output += `</div>`
 document.getElementById("forecast").innerHTML=output;
