@@ -41,3 +41,45 @@ font-size: 14px;
 .forecast-row {
 display: flex;
 }
+
+@media (max-width: 480px) {
+    .forecast-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .day-card {
+        width: 85%;
+        max-width: 390px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 16px;
+        border-radius: 0;
+        background: transparent;
+    }
+
+    .day-card:first-child {
+        background: #2b3038;
+    }
+
+    .day-card h3 {
+        text-align: left;
+        margin: 0;
+    }
+
+    .icon {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .temps {
+        text-align: right;
+    }
+
+    .temps p {
+        margin: 0;
+    }
+}

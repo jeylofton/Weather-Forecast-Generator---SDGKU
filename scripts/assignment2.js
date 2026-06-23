@@ -33,46 +33,60 @@ output +=
 `<div class="day-card">
     <h3>Mon</h3>
     <div class="icon">☀️</div>
+    <div class="temps">
     <p>${mondayC} °C</p>
     <p>${mondayF} °F</p>
+    </div>
 </div>`;
 
 output += `<div class="day-card">
 <h3>Tues</h3>
 <div class="icon">⛈️</div>
+<div class="temps">
 <p> ${tuesdayC} °C </p> 
 <p>${tuesdayF} °F</p>
+</div>
 </div>`;
 
 output += `<div class="day-card"> 
 <h3>Wed</h3> 
 <div class="icon">☁️</div>
+<div class="temps">
 <p>${wednesdayC} °C</p> 
 <p>${wednesdayF} °F</p>
+</div>
 </div>`;
 output += `<div class="day-card">
 <h3>Thurs</h3> 
 <div class="icon">☁️</div>
+<div class="temps">
 <p>${thursdayC} °C </p>
 <p>${thursdayF} °F</p>
+</div>
 </div>`;
 output += `<div class="day-card">
 <h3>Fri</h3> 
 <div class="icon">☀️</div>
+<div class="temps">
 <p>${fridayC} °C</p>
 <p>${fridayF} °F</p>
+</div>
 </div>`;
 output += `<div class="day-card">
 <h3>Sat</h3>
 <div class="icon">☀️</div>
+<div class="temps">
 <p>${saturdayC} °C</p>
 <p>${saturdayF} °F</p>
+</div>
 </div>`;
 output += `<div class="day-card">
 <h3>Sun</h3>
 <div class="icon">⛈️</div>
+<div class="temps">
 <p>${sundayC} °C </p>
 <p>${sundayF} °F</p>
+</div>
 </div>`;
 
 output += `</div>`
