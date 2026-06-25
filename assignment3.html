@@ -10,21 +10,33 @@
         <link rel="stylesheet" href="assignment3.css">
         <link rel="icon" type="image/x-icon" href="image/weather-station.png">
     </head>
-    <body>
-        <h1>Weather Station Temperature Converter</h1>
+    <<body>
+    <h1>Weather Station Temperature Converter</h1>
+    <div class="controls">
         <input type="number" class="temperature" placeholder="Enter temperature">
         <select class="scale">
-        <option value="F">Fahrenheit</option>
-        <option value="C">Celsius</option>
+            <option value="F">Fahrenheit °F</option>
+            <option value="C">Celsius °C</option>
         </select>
         <button onclick="convertTemperature()">Convert</button>
-    <div class="thermometer">
-    <div class="tube">
-        <div class="fill"></div>
     </div>
-    <div class="bulb"></div>
+    <div class="weather-card">
+        <div class="left-side">
+            <div class="main-temp">--°</div>
+            <div class="details">
+                <span class="converted-temp">Converted: --</span>
+                <span>|</span>
+                <span class="weather-feel">Feels Like --°</span>
+            </div>
+            <div class="details">
+                <span class="weather-level">Enter a temperature</span>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="weather-icon">☁️</div>
+            <div class="weather-text">Waiting</div>
+        </div>
     </div>
-        <h2 class="result"></h2>
 
         <script src="scripts/assignment3.js"></script>
     </body>
