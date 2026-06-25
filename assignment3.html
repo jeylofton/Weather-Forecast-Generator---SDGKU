@@ -11,10 +11,21 @@
         <link rel="icon" type="image/x-icon" href="image/weather-station.png">
     </head>
     <body>
-        <div>
-            <h1>Tempature Converter</h1>
-        </div>
-        
-        <script src="scripts/assignment3.js" async defer></script>
+        <h1>Weather Station Temperature Converter</h1>
+        <input type="number" class="temperature" placeholder="Enter temperature">
+        <select class="scale">
+        <option value="F">Fahrenheit</option>
+        <option value="C">Celsius</option>
+        </select>
+        <button onclick="convertTemperature()">Convert</button>
+    <div class="thermometer">
+    <div class="tube">
+        <div class="fill"></div>
+    </div>
+    <div class="bulb"></div>
+    </div>
+        <h2 class="result"></h2>
+
+        <script src="scripts/assignment3.js"></script>
     </body>
 </html>
