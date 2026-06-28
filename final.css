@@ -72,3 +72,51 @@ h1{
 button{
     margin-top: 20px;
 }
+
+/* Mobile Devices */
+@media (max-width: 768px){
+
+    .container{
+        width: 100%;
+        padding: 15px;
+    }
+
+    #temperatures{
+        width: 100%;
+    }
+
+    .forecast-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .day,
+    .icon,
+    .chance,
+    .condition{
+        width: auto;
+        text-align: center;
+    }
+
+    .bar{
+        display: none;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .summary{
+        text-align: center;
+    }
+
+    button{
+        display: block;
+        margin: 20px auto;
+    }
+
+}
